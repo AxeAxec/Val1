@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special day ni Pearl</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/flowers.png'), #ffe6f2;
+            background-size: cover;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            color: #d63384;
+            font-size: 28px;
+        }
+        .photo {
+            width: 300px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 5px solid #ff99cc;
+        }
+        .photo:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #d63384;
+            font-weight: bold;
+        }
+        .spotify {
+            display: none;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+        .grid-container {
+            display: none;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff0f5;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item {
+            background: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-weight: bold;
+            color: #d63384;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .grid-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        #listTitle {
+            display: none;
+            color: #d63384;
+            font-size: 22px;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+        .spotify {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+        /* Read Me Section */
+        .read-me-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: #ff66b2;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .read-me-btn:hover {
+            background: #ff3385;
+            transform: scale(1.1);
+        }
+        .letter {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+            color: #d63384;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+    gap: 10px; /* Space between NOTICE and image */
+}
+
+.notice {
+    width: fit-content;
+    padding: 10px;
+    background: rgba(255, 192, 203, 0.5);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d63384;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.start-here {
+    width: fit-content;
+    padding: 10px;
+    background: rgba(255, 192, 203, 0.5);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d63384;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>To My Beautiful Love Love ❤️</h2>
+        <div class="notice">
+            <p><strong>NOTICE</strong></p>
+            <p>To: The most beautiful GF (my future wife) 💖<br>From: Your loving BF/manliligaw (your future husband) 💕</p>
+        </div>
+        <div class="start-here">STEP 1 — Click the picture FIRST!!!</div>
+    </div>
+        <img src="Val1/hi.png" alt="Her Picture" class="photo" onclick="showContent()">
+        <p class="message" id="message">You are the most amazing person in my life! I love you so much! 💖</p>
+
+        <iframe class="spotify" id="spotify" src="https://open.spotify.com/embed/track/5Fd57k6SVtzmddpHa5Axpv" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <h3 id="listTitle">💖 Things I love about you 💖</h3>
+        <div class="grid-container" id="loveList">
+            <div class="grid-item">✨ You’re so kind. To everything and everyone.</div>
+            <div class="grid-item">✨ You are so talented. Is it normal to slay this hard latina?</div>
+            <div class="grid-item">✨ You are hardworking. You work hard to make the world you dream of.</div>
+            <div class="grid-item">✨ You have the cutest smile! It makes my day.</div>
+            <div class="grid-item">✨ You know me. Your words and action mean everything!</div>
+            <div class="grid-item">✨ You make every day a little brighter. I don’t know how you do it.</div>
+            <div class="grid-item">✨ You are so smart. I love how you plan your future.</div>
+            <div class="grid-item">✨ You are cute. (◕‿◕ A given)</div>
+            <div class="grid-item">✨ You make the world a better place. (´｡• ᵕ •｡`)</div>
+            <div class="grid-item">✨ You are so beautiful. I don’t know how you do it sometimes (´。• ᵕ •。`)</div>
+            <div class="grid-item">✨ You love playing games. I love our 1v1 together. (•‿•)</div>
+            <div class="grid-item">✨ You have good taste. The movies, music, and your clothing style!</div>
+        </div>
+        
+        <div class="start-here">STEP 2 — Click the "Read me"</div>
+    </div>
+        <!-- Read Me Button -->
+        <button class="read-me-btn" onclick="showLetter()">💌 Read Me</button>
+
+        <!-- Hidden Letter -->
+        <div class="letter" id="letter">
+            <p>My love love,</p>
+            <p>From the moment I met you, my world became brighter. Your kindness, beauty, and love have filled my days with joy. I am so grateful to have you in my life. No matter what happens, you will always have a special place in my heart. I love you endlessly. (magtatagalog na ako naubusan na ako ng english hehe) I hope obstacle na mahaharap natin as couple sana wag ka sumuko sa akin and wag mo ako i-let go na, dahil alam mo naman na ipaglalaban ko relasyon natin sa huli and sana ikaw rin na if ako na yung nanghihina sana ikaw naman yung lumaban para sa atin.  I love the way na nag oopen-up ka sa akin and ako yung nalalapitan mo if you're tired. Nandito lang ako tutulugan kita at icocomfort at lalambingin kita, ipapa-feel ko sayo yung deserved mo pagmamahal. Love, itratrato kita ng tama at maganda, ayaw ko na magkaroon ka ng trauma and I will promise sayo na wala kang makukuha sa trauma sa akin. Ikaw na papakasalan ko and sure na ako doon, sana ikaw rin sure ka na rin sa akin. You're my greatest love and my last love.  💖</p>
+            <p>Forever yours,</p>
+            <p><strong>Your Loving BF/manliligaw (your future husband) 💕</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function showContent() {
+            document.getElementById("message").style.display = "block";
+            document.getElementById("spotify").style.display = "block";
+            document.getElementById("listTitle").style.display = "block";
+            document.getElementById("loveList").style.display = "grid";
+        }
+
+        function showLetter() {
+            document.getElementById("letter").style.display = "block";
+        }
+    </script>
+</body>
+</html>
